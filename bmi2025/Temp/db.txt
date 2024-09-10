@@ -1,0 +1,44 @@
+CREATE TABLE person (
+  sid int NOT NULL AUTO_INCREMENT,
+  name text NOT NULL,
+  gender enum('M','F') NOT NULL,
+  dob date NOT NULL,
+  age int NOT NULL,
+  height int NOT NULL,
+  weight int NOT NULL,
+  bmi float NOT NULL,
+  status varchar(30) NOT NULL,
+  email text NOT NULL,
+  country text NOT NULL,
+  comment varchar(100) NOT NULL,
+  PRIMARY KEY (sid)
+    );
+
+
+CREATE TABLE citizen (
+  sid int NOT NULL AUTO_INCREMENT,
+  name text NOT NULL,
+  gender enum('M','F') NOT NULL,
+  PRIMARY KEY (sid)
+ );
+
+
+
+CREATE TABLE student (
+  sid int NOT NULL AUTO_INCREMENT,
+  name text ,
+  gender enum('M','F') NOT NULL,
+  dob date ,
+  age int,
+  height int ,
+  weight int ,
+  bmi float ,
+  status varchar(30) ,
+  email text ,
+  country text ,
+  comment varchar(100) ,
+  PRIMARY KEY (sid)
+    );
+
+
+
